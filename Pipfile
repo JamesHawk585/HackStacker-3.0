@@ -17,6 +17,7 @@ name = "pypi"
     psycopg2-binary = "*"
     python-dotenv = "*"
     sqlalchemy = "*"
+    marshmallow-sqlalchemy = "*"
     [requires]
     python_version = "3.9"
     python_full_version = "3.9.17"

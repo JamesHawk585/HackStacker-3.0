@@ -3,12 +3,12 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_restful import Resource
 from flask_migrate import Migrate
 import datetime 
-from marshmallow_sqlalchemy import SQLAlchemySchema
+# from marshmallow_sqlalchemy import SQLAlchemySchema
 
 from config import app, db, api, ma
 from models import User, BlogPost, Comment, Category, db
 from sqlalchemy.exc import IntegrityError
-from marshmallow import fields
+# from marshmallow import fields
 
 
 from api.user import users, user_by_id
