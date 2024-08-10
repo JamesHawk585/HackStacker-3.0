@@ -1,6 +1,7 @@
 from sqlalchemy.ext.hybrid import hybrid_property
 from sqlalchemy_serializer import SerializerMixin
 from sqlalchemy.orm import relationship, validates
+from sqlalchemy import Column, Integer, String  
 from config import db, bcrypt
 from models.user import User
 from models.blog_post import BlogPost
