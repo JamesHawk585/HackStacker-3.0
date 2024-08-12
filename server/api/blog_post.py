@@ -5,11 +5,14 @@ from flask_migrate import Migrate
 # import ipdb
 import datetime 
 # from marshmallow_sqlalchemy import SQLAlchemySchema
-from schema import blog_post_schema
-from schema import blog_posts_schema
+from api.schema import blog_post_schema
+from api.schema import blog_posts_schema
 
 from config import app, db, api, ma
-from models import User, BlogPost, Comment, Category, db
+from models.user import User
+from models.blog_post import BlogPost
+from models.comment import Comment
+from models.category import Category
 from sqlalchemy.exc import IntegrityError
 # from marshmallow import fields
 

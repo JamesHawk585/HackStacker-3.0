@@ -18,6 +18,8 @@ name = "pypi"
     python-dotenv = "*"
     sqlalchemy = "*"
     marshmallow-sqlalchemy = "*"
+    flask-marshmallow = "*"
+    ipdb = "*"
     [requires]
     python_version = "3.9"
     python_full_version = "3.9.17"

@@ -6,12 +6,12 @@ from flask_migrate import Migrate
 import datetime 
 # from marshmallow_sqlalchemy import SQLAlchemySchema
 
-from config import app, db, api, ma
-from models import User, BlogPost, Comment, Category, db
+from config import app, db , api, ma
+from models.user import User, db
 from sqlalchemy.exc import IntegrityError
 # from marshmallow import fields
-from schema import users_schema
-from schema import user_schema
+from api.schema import users_schema
+from api.schema import user_schema
 
 
 

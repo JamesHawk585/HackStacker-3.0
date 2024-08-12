@@ -8,12 +8,15 @@ import datetime
 # from marshmallow_sqlalchemy import SQLAlchemySchema
 
 from config import app, db, api, ma
-from models import User, BlogPost, Comment, Category, db
+from models.user import User
+from models.blog_post import BlogPost
+from models.comment import Comment
+from models.category import Category
 from sqlalchemy.exc import IntegrityError
 # from marshmallow import fields
 
-from schema import categories_schema
-from schema import category_schema
+from api.schema import categories_schema
+from api.schema import category_schema
 
 
 @app.route('/categories', methods=['GET','POST'])

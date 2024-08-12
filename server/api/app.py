@@ -6,7 +6,10 @@ import datetime
 # from marshmallow_sqlalchemy import SQLAlchemySchema
 
 from config import app, db, api, ma
-from models import User, BlogPost, Comment, Category, db
+from models.user import User
+from models.blog_post import BlogPost
+from models.comment import Comment
+from models.category import Category
 from sqlalchemy.exc import IntegrityError
 # from marshmallow import fields
 
@@ -18,7 +21,7 @@ from api.comment import comments, comment_by_id
 from api.cookie import cookies
 from api.iam import Signup, CheckSession, Login, Logout
 from api.schema import UserSchema, BlogPostSchema, CommentSchema, CategorySchema
-from api.schema import users, user_by_id
+# from api.schema import users, user_by_id
 
 
 from config import app, db, api 
